@@ -52,15 +52,11 @@ hr {
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    width: 75%;
+    max-width: 50rem;
 }
 
 .splash-image {
     width: 100%;
-}
-
-.tag-container{
-    display: inline-flex;
 }
 
 .card-footer{
@@ -72,22 +68,27 @@ hr {
 }
 
 .title-post{
-    position:absolute;
+    position:relative;
     text-decoration: none;
     color: $text-color;
     margin-left: $spacing-unit;
     height: 100%;
+    width: auto;
+    display: inline-flex;
     align-content: center;
 }
 
 .align-tags-right {   
-    right: 0;
-    position: absolute;
+    display: inline-flex;
+    float: right;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin-right: $spacing-unit;
 }
 
 .tag-container{
-    display: flexbox;
+    display: inline-flex;
     align-items: center;
     height: 100%;
 }
