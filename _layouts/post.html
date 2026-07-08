@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1> 
+    <h3 class="post-release-year">Release Year: {{ page.release-year | default: 'TBD'}}</h3>
+    <div class="tag-container">
+      {%- for tag in page.tags -%}
+      <div class="card-tag card-tag-right-margins {{tag}}">
+        <p>{{tag}}</p>
+      </div>
+      {%- endfor -%}
+    </div>
+    <p class="post-meta" style="margin-top: 1em">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <hr/>
+
+
+  <div class="blog-page-splash-container">
+      <img class="blog-page-splash" src="{{page.image}}" style="margin-top: {{ page.splash-offset | default: 0 }}" />
+  </div>
+
+  <hr style="margin-bottom: 1em"/>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

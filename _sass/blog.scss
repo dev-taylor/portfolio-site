@@ -1,0 +1,162 @@
+.blog-cards-container > p {
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 84.7;
+}
+
+hr {
+    color: $grey-color-light;
+}
+
+.page-heading {
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 84.7;
+}
+
+.pdf {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    aspect-ratio: 0.77;
+}
+
+.blog-card-list {
+    display: flexbox;
+    margin-top: $spacing-unit;
+    width: 100%;
+}
+
+.blog-card-meta {
+    margin-left: 0.66* $spacing-unit;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.0em;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "ELSH" 84.7;
+}
+
+.blog-card{
+    display: block;
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: 75%;
+}
+
+.splash-image {
+    width: 100%;
+}
+
+.tag-container{
+    display: inline-flex;
+}
+
+.card-footer{
+    background-color: $grey-color-light;
+    height: 2*$spacing-unit;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.title-post{
+    position:absolute;
+    text-decoration: none;
+    color: $text-color;
+    margin-left: $spacing-unit;
+    height: 100%;
+    align-content: center;
+}
+
+.align-tags-right {   
+    right: 0;
+    position: absolute;
+    margin-right: $spacing-unit;
+}
+
+.tag-container{
+    display: flexbox;
+    align-items: center;
+    height: 100%;
+}
+
+.card-tag{
+    
+    background-color: rgb(247, 247, 247);
+    border-radius: .15em;
+    height: 1.7em;
+
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-size: .75em;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "ELSH" 84.7;
+
+    text-decoration: none;
+    color: $text-color;
+    background-color: $code-snippet-outline;
+    
+    border-left-width: 5px;
+    border-left: 8px solid;
+
+    padding-right: 0.3 * $spacing-unit;
+    padding-left: 0.3 * $spacing-unit;
+    min-width: $spacing-unit;
+}
+
+.card-tag-left-margins {
+    margin-left: 0.5*$spacing-unit;
+}
+
+.card-tag-right-margins {
+    margin-right: 0.5*$spacing-unit;
+}
+
+.card-tag.UE5{
+    border-color: yellow;
+}
+
+.card-tag.UI {
+    border-color: cyan;
+}
+
+.card-tag.Gameplay {
+    border-color: magenta;
+}
+
+.card-tag > p {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-tag.Godot {
+    border-color: blue;
+}
+
+.blog-page-splash-container {
+    margin: $spacing-unit 0;
+    width: 100%;
+    aspect-ratio: 3;
+    overflow: hidden;
+}
+
+.blog-page-splash {
+    
+    width: 100%;
+}
