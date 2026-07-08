@@ -130,7 +130,7 @@
   filter: drop-shadow(-0.02em 0 cyan) drop-shadow(-0.03em 0 blue) drop-shadow(0.02em 0 yellow) drop-shadow(0.03em 0 red) blur(0.005em);
   font-family: "Geist Pixel", sans-serif;
   font-optical-sizing: auto;
-  font-size: 2.5em;
+  @include relative-font-size(5);
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
@@ -144,8 +144,15 @@
   justify-self: center;
 }
 
+@media all and (max-width: 600px) {
+  .text_1 {
+    font-size: 10vw;
+  }
+}
+
 .text-changer {
   height:100%;
-  display: absolute; 
+  display: relative; 
   align-content: center;
+  overflow: hidden;
 }
