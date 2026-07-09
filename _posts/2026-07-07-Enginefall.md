@@ -2,6 +2,7 @@
 layout: post
 title: "Enginefall"
 category: games
+permalink: /games/Enginefall
 image: /assets/images/Enginefall.jpg
 tags: [UE5,UI,Gameplay,Leadership]
 ---
