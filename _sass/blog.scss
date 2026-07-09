@@ -53,6 +53,7 @@ hr {
 .blog-card-wrapper {
     border-radius: 1em;
     overflow: hidden;
+    transition: all 0.1s;
 }
 
 .blog-card-wrapper:hover {
@@ -200,4 +201,33 @@ hr {
 
 .green {
     color: $grey-color-dark;
+}
+
+.image-container {
+    background-color: yellow;
+    display: block;
+    width: 100%;
+}
+
+.embed-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.embed-image > image{
+    width: 100%;
+    cursor: zoom-in;
+}
+
+figcaption {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 0.85em;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "ELSH" 84.7;
+    color: $fig-caption-color;
 }
