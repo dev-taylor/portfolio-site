@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blog-cards
 title: Personal Projects
 permalink: /personal-projects/
 ---

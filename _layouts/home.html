@@ -6,19 +6,19 @@
       {%- include header.html -%}
   
       <main class="page-content landing-page-content" aria-label="Content">
-        <div class="balls">
-          <div class="ball"></div>
-          <div class="ball"></div>
-          <div class="ball"></div>
-        </div>
-        <div class="wrapper">
+        <div class="wrapper index-wrapper">
           <div class="home">
             {%- if page.title -%}
             <h1 class="page-heading">{{ page.title }}</h1>
             {%- endif -%}
           </div>
-
           {{ content }}
+        </div>
+
+          <div class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
         </div>
       </main>
     

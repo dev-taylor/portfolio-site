@@ -21,6 +21,8 @@ $grey-color-dark:  #55D396 !default;
 $code-snippet-bg:  #232327 !default;
 $code-snippet-outline:  #38383D !default;
 
+$strong-color: #27ff5d !default;
+
 $table-text-align: left !default;
 
 $god-rays: #00f7ff !default;
@@ -54,5 +56,6 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting",
   "landing-page",
-  "blog"
+  "blog",
+  "contact"
 ;

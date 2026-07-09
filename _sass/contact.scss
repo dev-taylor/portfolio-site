@@ -1,0 +1,172 @@
+hr {
+    color: $grey-color-light;
+    margin: $spacing-unit;
+}
+
+h1, h2, h3, label, .form-label {
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "ELSH" 84.7;
+}
+
+.flair-text {
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "ELSH" 84.7;
+}
+
+.form {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    margin-top: 2*$spacing-unit;
+}
+
+.contact-wrapper{
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    line-height: 2rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    gap: .75em;
+}
+
+.form-label {
+    @include relative-font-size(1.5);
+    margin-left: 0.5 * $spacing-unit;
+}
+
+.input-label {
+    @include relative-font-size(1.25);
+    margin-left: 0.25 * $spacing-unit;
+}
+
+.input {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: .5em;
+    color: $background-color;
+    line-height: 2em;
+    padding: .75em;
+    @include relative-font-size(1);
+    box-sizing: border-box;
+}
+
+.message-row {
+    resize: vertical;
+    height: 10em;
+}
+
+.submit-row {
+    justify-content: flex-end;
+}
+
+.submit-button {
+    align-self: right;
+    height: 100%;
+    line-height: 2rem;
+    @include relative-font-size(1.25);
+    padding: 0.5rem 1rem;
+    background-color: $grey-color-light;
+    border: none;
+    border-radius: .5em;
+    margin-top: .5em;
+    color: $text-color;
+}
+
+
+.submit-button:hover {
+    scale: 1.05;
+    filter: brightness(1.1);
+}
+
+.submit-button:active {
+    scale: 1;
+    filter: brightness(0.7);
+}
+
+.socials {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+}
+
+.socials-link {
+    color: transparent;
+}
+
+.socials-icon {
+    display: relative;
+    width: 5rem;
+    min-width: 120px;
+    height: 5rem;
+    min-height: 120px;
+
+    overflow: hidden;
+
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;  
+    
+    border-radius: 50%;
+}
+
+.svg {
+    width: 100%;
+    height: 100%;
+    padding: 1.3em;
+    box-sizing: border-box;
+}
+
+path {
+    width: 100%;
+    height: 100%;
+}
+
+.linked-in{
+    color: #0A66C2;
+}
+
+.socials-icon:hover {
+    scale: 1.05;
+    filter: brightness(1.1);
+}
+
+.social-backfill {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.github {
+    fill: #F0F6FC;
+    text-decoration: none;
+}
+
+.email {
+    fill: #F0F6FC;
+}

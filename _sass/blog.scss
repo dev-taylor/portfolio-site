@@ -46,13 +46,39 @@ hr {
         "ELSH" 84.7;
 }
 
+.post-link {
+    max-width: 50rem;
+}
+
+.blog-card-wrapper {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.blog-card-wrapper:hover {
+    --card-rotation-deg: 20;
+    transform: perspective(500px) rotateX(var(--card-x-rot)) rotateY(var(--card-y-rot));
+    scale:1.05;
+    filter: brightness(1.1);
+    overflow: hidden;
+}
+
+.blog-card-wrapper:hover::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--card-y-pos) - 20em);
+    left: calc(var(--card-x-pos) - 20em);
+    width: 40em;
+    height: 40em;
+    background-image: radial-gradient(white, transparent 50%);
+    opacity: 20%;
+}
+
 .blog-card{
     display: block;
-    border-radius: 1em;
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    max-width: 50rem;
 }
 
 .splash-image {
@@ -139,6 +165,10 @@ hr {
     border-color: magenta;
 }
 
+.card-tag.Leadership {
+    border-color: greenyellow;
+}
+
 .card-tag > p {
     height: 100%;
     width: 100%;
@@ -160,4 +190,14 @@ hr {
 .blog-page-splash {
     
     width: 100%;
+}
+
+.steam-embed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.green {
+    color: $grey-color-dark;
 }

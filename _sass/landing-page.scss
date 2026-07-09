@@ -1,3 +1,7 @@
+.index-wrapper {
+
+}
+
 .splash-container {
   justify-content: center;
   margin-right: 0;
@@ -19,36 +23,11 @@
   }
 }
 
-.splash-container-vertical {
-  vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  display: flexbox;
-  flex-direction: column;
-  min-height: 30vh;
-  height: 100%;
-}
-
-.splash-title {
-  justify-self: center;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  vertical-align: middle;
-  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-size: 60px;
-  font-weight: 600;
-}
-
-.landing_wrapper {
-  height: 75vh;
-  background-color: #d2b48c;
-}
-
 .landing-page-content{
-  align-content: center;
+  align-content: top;
+  align-items: stretch;
+  display:flex;
 }
-
 
 @keyframes transform-infinity {
   0% {
@@ -130,7 +109,7 @@
   filter: drop-shadow(-0.02em 0 cyan) drop-shadow(-0.03em 0 blue) drop-shadow(0.02em 0 yellow) drop-shadow(0.03em 0 red) blur(0.005em);
   font-family: "Geist Pixel", sans-serif;
   font-optical-sizing: auto;
-  @include relative-font-size(5);
+  font-size: 10vh;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
@@ -138,21 +117,49 @@
 
   color: rgb(255, 255, 255);
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: inline-block;
-  position: relative;
-  justify-self: center;
+  display: block;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-height: 600px) {
   .text_1 {
-    font-size: 10vw;
+    font-size: 12vh;
   }
 }
 
+@media all and (min-height: 500px) {
+  .text_1 {
+    font-size: 4vh;
+  }
+}
+
+.splash-text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
 .text-changer {
-  height:100%;
-  display: relative; 
-  align-content: center;
+  display: block; 
+  flex-direction: column;
+  flex: 1 1;
+  align-content: end;
   overflow: hidden;
+  min-height: 10em;
+  max-height: 50%;
+}
+
+.description-changer {
+  flex: 1;
+  @include relative-font-size(1.25);
+}
+
+.descriptor-text {
+  height: 100%;
+  width: 100%;
+}
+
+strong {
+  color: $strong-color;
 }
