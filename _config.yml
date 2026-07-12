@@ -41,6 +41,13 @@ header_pages:
 
 minima:
   show_excerpts: true
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      showdate: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

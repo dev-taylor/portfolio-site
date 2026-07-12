@@ -5,7 +5,8 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1> 
-    <h3 class="post-release-year">Release Year: {{ page.release-year | default: 'TBD'}}</h3>
+    <h3 class="post-company">{{page.company | escape}}</h3>
+    <h4 class="post-release-year green">{{ page.release-year | default: 'Not Yet Released'}}</h4>
     <div class="tag-container">
       {%- for tag in page.tags -%}
       <div class="card-tag card-tag-right-margins {{tag}}">
@@ -14,10 +15,12 @@ layout: default
       {%- endfor -%}
     </div>
     <p class="post-meta" style="margin-top: 1em">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
+      {%- if page.showdate -%}
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ page.date | date: date_format }}
+        </time>
+      {%- endif -%}
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
